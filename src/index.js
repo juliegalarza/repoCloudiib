@@ -17,11 +17,11 @@ app.set('view engine', 'ejs');
 // middlewares
 app.use(morgan('dev'));
 app.use(myConnection(mysql, {
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
+    host: 'proyectocloudiddb.cwe2eqjpdvxk.us-east-1.rds.amazonaws.com',
+    user: 'admin',
+    password: 'cloud2024',
     port: 3306,
-    database: 'nodejs2'
+    database: 'pclouddb'
 }, 'single'));
 app.use(express.urlencoded({extended: false}));
 
